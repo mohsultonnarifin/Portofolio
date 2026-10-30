@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1424">
+<meta name="description" content="Portofolio profesional Moh Sultonn Arifin — Microsoft Office, Google Apps Script, pengembangan aplikasi, inventory, demand planning, dan sistem operasional.">
+<title>Moh Sultonn Arifin | Portfolio Profesional</title>
+<style>
+:root{--bg:#0b1424;--panel:#111f33;--panel2:#14263d;--text:#eef4ff;--muted:#a8b7cc;--line:rgba(255,255,255,.11);--accent:#52d6b5;--blue:#7db7ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(11,20,36,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.3px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:12px;font-weight:750;font-size:14px;transition:.2s;border:1px solid transparent}.btn:hover{transform:translateY(-2px)}.primary{background:var(--accent);color:#06251f}.secondary{border-color:var(--line);background:rgba(255,255,255,.04)}
+.hero{padding:84px 0 72px;background:radial-gradient(ellipse at 80% 15%,rgba(82,214,181,.13),transparent 38%),radial-gradient(ellipse at 5% 65%,rgba(87,142,255,.13),transparent 34%)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:56px;align-items:center}.eyebrow{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.08;letter-spacing:-2px;margin:16px 0}.hero h1 span{color:var(--accent)}.lead{font-size:18px;color:var(--muted);max-width:690px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.quick{display:flex;gap:22px;flex-wrap:wrap;color:var(--muted);font-size:13px}.quick strong{color:var(--text)}
+.portrait-wrap{position:relative;max-width:330px;margin:auto}.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 24%;border-radius:26px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 70px rgba(0,0,0,.4)}.portrait-wrap:after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid rgba(82,214,181,.45);border-radius:26px;z-index:-1}
+section{padding:76px 0}.section-head{max-width:720px;margin-bottom:30px}.kicker{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.section-head h2{font-size:clamp(28px,4vw,40px);line-height:1.2;margin:9px 0}.section-head p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:20px;padding:26px}.panel h3{margin:0 0 10px;font-size:19px}.panel p{margin:0;color:var(--muted)}.highlight{color:var(--accent);font-weight:750}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}.skill .icon{font-size:23px}.skill h3{font-size:16px;margin:9px 0 5px}.skill p{font-size:13px;color:var(--muted);margin:0}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;min-height:250px;transition:.2s}.project:hover{transform:translateY(-4px);border-color:rgba(82,214,181,.5)}.project-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.tag{font-size:11px;color:var(--accent);background:rgba(82,214,181,.1);padding:5px 9px;border-radius:20px;font-weight:800}.project h3{font-size:20px;margin:17px 0 8px}.project p{color:var(--muted);font-size:14px;margin:0 0 18px}.project a{margin-top:auto;color:var(--accent);font-weight:800;font-size:14px}.project a:hover{text-decoration:underline}
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.value{padding:20px;border-left:3px solid var(--accent);background:rgba(255,255,255,.035);border-radius:0 14px 14px 0}.value strong{display:block;margin-bottom:5px}.value span{color:var(--muted);font-size:13px}
+.contact{background:linear-gradient(135deg,#132b3a,#102039);border:1px solid var(--line);border-radius:26px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:24px}.contact h2{font-size:clamp(27px,4vw,38px);margin:0 0 8px}.contact p{color:var(--muted);margin:0}.contact-actions{display:flex;flex-wrap:wrap;gap:10px;flex-shrink:0}
+footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:70px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr;gap:36px}.portrait-wrap{max-width:245px;grid-row:1}.hero{padding:55px 0}.skills,.value-grid{grid-template-columns:repeat(2,1fr)}.contact{display:block}.contact-actions{margin-top:22px}.navlinks{display:none}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}section{padding:55px 0}.projects,.about-grid,.skills,.value-grid{grid-template-columns:1fr}.hero h1{letter-spacing:-1.3px}.lead{font-size:16px}.contact{padding:25px}.btn{width:100%}.actions{display:grid}.quick{gap:12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#beranda">MOH SULTONN <span>ARIFIN.</span></a>
+  <div class="navlinks"><a href="#profil">Profil</a><a href="#keahlian">Keahlian</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a></div>
+  <a class="btn secondary" href="#kontak">Hubungi Saya ↗</a>
+</nav></div></header>
+<main>
+<section class="hero" id="beranda"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">Professional Portfolio · Digital & Operational Systems</div>
+    <h1>Solusi kerja yang <span>lebih cerdas</span>, akurat, dan terukur.</h1>
+    <p class="lead">Saya <strong>Moh Sultonn Arifin</strong>, profesional yang menggabungkan kemampuan administrasi, pengolahan data, dan pengembangan aplikasi untuk membantu proses bisnis berjalan lebih efektif dan dapat dipertanggungjawabkan.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://wa.me/6282234588450?text=Halo%20Moh%20Sultonn%20Arifin%2C%20saya%20tertarik%20membahas%20peluang%20kerja." target="_blank" rel="noopener">WhatsApp Saya ↗</a>
+      <a class="btn secondary" href="mailto:mohsultonnarifin@gmail.com?subject=Kesempatan%20Kerja%20-%20Moh%20Sultonn%20Arifin">Kirim Email ↗</a>
+      <a class="btn secondary" href="#proyek">Lihat Hasil Karya ↓</a>
+    </div>
+    <div class="quick"><span>✉ <strong>mohsultonnarifin@gmail.com</strong></span><span>☎ <strong>0822-3458-8450</strong></span></div>
+  </div>
+  <div class="portrait-wrap"><img class="portrait" src="assets/foto-profil.jpg" alt="Foto profil Moh Sultonn Arifin"></div>
+</div></section>
+
+<section id="profil"><div class="wrap">
+  <div class="section-head"><div class="kicker">Tentang Saya</div><h2>Berorientasi pada ketelitian data dan solusi nyata.</h2><p>Saya senang menyederhanakan proses kerja melalui sistem yang praktis, terstruktur, dan mudah digunakan.</p></div>
+  <div class="about-grid">
+    <article class="panel"><h3>Profil Profesional</h3><p>Memiliki keahlian mahir dalam Microsoft Office, Google Apps Script, serta pembuatan aplikasi berbasis kebutuhan operasional. Berpengalaman membangun solusi untuk sinkronisasi stok, perencanaan pembelian, pemantauan demand penjualan, layanan pembayaran air, dan operasional bengkel motor.</p></article>
+    <article class="panel"><h3>Nilai yang Saya Bawa</h3><p>Mengutamakan <span class="highlight">akurasi, efisiensi, transparansi, dan akuntabilitas</span>. Setiap sistem dirancang agar data lebih mudah dipantau, keputusan lebih terukur, dan pekerjaan harian lebih tertata.</p></article>
+  </div>
+</div></section>
+
+<section id="keahlian"><div class="wrap">
+  <div class="section-head"><div class="kicker">Keahlian Utama</div><h2>Teknologi dan kemampuan kerja</h2><p>Kombinasi keterampilan digital dan pemahaman proses operasional.</p></div>
+  <div class="skills">
+    <article class="skill"><div class="icon">▦</div><h3>Microsoft Word</h3><p>Menyusun dokumen profesional, format laporan, dan administrasi.</p></article>
+    <article class="skill"><div class="icon">▤</div><h3>Microsoft Excel</h3><p>Pengolahan data, formula, rekapitulasi, analisis, dan pelaporan.</p></article>
+    <article class="skill"><div class="icon">▧</div><h3>Microsoft PowerPoint</h3><p>Membuat presentasi informatif, terstruktur, dan komunikatif.</p></article>
+    <article class="skill"><div class="icon">⌘</div><h3>Google Apps Script</h3><p>Otomatisasi alur kerja dan integrasi data berbasis Google Workspace.</p></article>
+    <article class="skill"><div class="icon">⚙</div><h3>Pengembangan Aplikasi</h3><p>Membangun aplikasi web sesuai kebutuhan pengguna dan proses bisnis.</p></article>
+    <article class="skill"><div class="icon">▥</div><h3>Inventory & Data Analysis</h3><p>Sinkronisasi stok, Demand, ROP, ROQ, dan dukungan keputusan operasional.</p></article>
+  </div>
+</div></section>
+
+<section id="proyek"><div class="wrap">
+  <div class="section-head"><div class="kicker">Portofolio Proyek</div><h2>Aplikasi yang telah saya kembangkan</h2><p>Silakan klik setiap proyek untuk melihat aplikasi secara langsung.</p></div>
+  <div class="projects">
+    <article class="project"><div class="project-top"><span class="tag">Inventory · Data Accuracy</span><span>01</span></div><h3>Sistem Sinkronisasi Stok</h3><p>Aplikasi sinkronisasi data untuk membantu menjaga kesesuaian dan validitas data stok, sehingga informasi persediaan lebih akurat dan kredibel.</p><a href="https://sultonstsj-hub.github.io/Sinkron-Stok/" target="_blank" rel="noopener">Buka aplikasi ↗</a></article>
+    <article class="project"><div class="project-top"><span class="tag">Inventory · ROP & ROQ</span><span>02</span></div><h3>Sistem Rekomendasi Demand Pembelian</h3><p>Menggunakan pendekatan Inventory ROP dan ROQ untuk memberi rekomendasi jumlah pembelian agar risiko kelebihan maupun kekurangan stok dapat dikendalikan dengan analisis yang dapat dipertanggungjawabkan.</p><a href="https://sultonstsj-hub.github.io/Sys-Rekom-Part/" target="_blank" rel="noopener">Buka aplikasi ↗</a></article>
+    <article class="project"><div class="project-top"><span class="tag">Sales · Real-time Demand</span><span>03</span></div><h3>Aplikasi Demand Penjualan</h3><p>Membantu membaca jumlah barang terjual dari stok secara realtime, sehingga pemantauan pergerakan barang dan kebutuhan operasional menjadi lebih mudah.</p><a href="https://sultonstsj-hub.github.io/Aplikasi-Demand-SIP/" target="_blank" rel="noopener">Buka aplikasi ↗</a></article>
+    <article class="project"><div class="project-top"><span class="tag">BUMDes · Utility</span><span>04</span></div><h3>Website Cek Tagihan Air</h3><p>Website layanan pengecekan tagihan air untuk BUMDes Tunas Bangsa Desa Ngebruk, memudahkan pelanggan memperoleh informasi tagihan.</p><a href="https://bumdestunasbangsangebruk-hue.github.io/cektagihanair/" target="_blank" rel="noopener">Buka website ↗</a></article>
+    <article class="project"><div class="project-top"><span class="tag">BUMDes · Payment System</span><span>05</span></div><h3>Aplikasi Pembayaran Air — Tirta Langgeng</h3><p>Aplikasi pendukung proses pembayaran air BUMDes Desa Ngebruk untuk membantu pencatatan dan pengelolaan transaksi layanan.</p><a href="https://bumdestunasbangsangebruk-hue.github.io/tirtalanggeng/" target="_blank" rel="noopener">Buka aplikasi ↗</a></article>
+    <article class="project"><div class="project-top"><span class="tag">Workshop · Business System</span><span>06</span></div><h3>Sistem Manajemen Bengkel Motor</h3><p>Sistem bengkel yang mencakup penjualan spare part, servis, laporan teknisi, perhitungan laba, serta pengingat jadwal servis kepada konsumen.</p><a href="https://x.gd/GRch9" target="_blank" rel="noopener">Buka sistem ↗</a></article>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="kicker">Cara Saya Bekerja</div><h2>Fokus pada dampak yang bisa dirasakan.</h2></div>
+  <div class="value-grid">
+    <div class="value"><strong>Data lebih akurat</strong><span>Mengurangi ketidaksesuaian melalui sinkronisasi dan pencatatan yang terstruktur.</span></div>
+    <div class="value"><strong>Keputusan lebih terukur</strong><span>Menggunakan analisis stok dan demand sebagai dasar rekomendasi operasional.</span></div>
+    <div class="value"><strong>Proses lebih efisien</strong><span>Mengubah pekerjaan berulang menjadi alur digital yang lebih praktis.</span></div>
+  </div>
+</div></section>
+
+<section id="kontak"><div class="wrap"><div class="contact">
+  <div><div class="kicker">Mari Terhubung</div><h2>Siap berkontribusi untuk tim dan perusahaan Anda.</h2><p>Terbuka untuk peluang kerja, kolaborasi, maupun diskusi pengembangan sistem.</p></div>
+  <div class="contact-actions">
+    <a class="btn primary" href="https://wa.me/6282234588450?text=Halo%20Moh%20Sultonn%20Arifin%2C%20saya%20ingin%20menghubungi%20Anda%20terkait%20peluang%20kerja." target="_blank" rel="noopener">Chat WhatsApp ↗</a>
+    <a class="btn secondary" href="mailto:mohsultonnarifin@gmail.com?subject=Kesempatan%20Kerja%20-%20Moh%20Sultonn%20Arifin">Email Langsung ↗</a>
+  </div>
+</div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© 2026 Moh Sultonn Arifin · Portfolio Profesional</span><span>Dibuat dengan fokus pada solusi, data, dan efisiensi.</span></div></footer>
+</body></html>
